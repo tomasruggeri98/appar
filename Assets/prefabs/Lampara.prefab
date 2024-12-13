@@ -9,6 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8821328724268286580}
+  - component: {fileID: 2698959612593068409}
   m_Layer: 0
   m_Name: Lampara
   m_TagString: Untagged
@@ -32,6 +33,27 @@ Transform:
   - {fileID: 2754310020496207696}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &2698959612593068409
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9208698850816304134}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.3578875, y: 0.7136148, z: 0.38031864}
+  m_Center: {x: -0.002098024, y: 0.38991684, z: -0.017463923}
 --- !u!1001 &2428565152459966651
 PrefabInstance:
   m_ObjectHideFlags: 0
