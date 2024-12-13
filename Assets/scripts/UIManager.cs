@@ -16,14 +16,13 @@ public class UIManager : MonoBehaviour
         GameManager.Instance.OnMainMenu += ActivateMainMenu;
         GameManager.Instance.OnItemsMenu += ActivateItemsMenu;
         GameManager.Instance.OnARPosition += ActivateARPosition;
-        
     }
 
     private void ActivateMainMenu()
     {
-        mainMenuCanvas.transform.GetChild(0).transform.DOScale(new Vector3(1,1,1), 0.3f);
-        mainMenuCanvas.transform.GetChild(1).transform.DOScale(new Vector3(1,1,1), 0.3f);
-        mainMenuCanvas.transform.GetChild(2).transform.DOScale(new Vector3(1,1,1), 0.3f);
+        mainMenuCanvas.transform.GetChild(0).transform.DOScale(new Vector3(4, 4, 4), 0.3f);
+        mainMenuCanvas.transform.GetChild(1).transform.DOScale(new Vector3(4, 4, 4), 0.3f);
+        mainMenuCanvas.transform.GetChild(2).transform.DOScale(new Vector3(4, 4, 4), 0.3f);
 
         itemsMenuCanvas.transform.GetChild(0).transform.DOScale(new Vector3(0, 0, 0), 0.5f);
         itemsMenuCanvas.transform.GetChild(1).transform.DOScale(new Vector3(0, 0, 0), 0.3f);
@@ -39,7 +38,7 @@ public class UIManager : MonoBehaviour
         mainMenuCanvas.transform.GetChild(1).transform.DOScale(new Vector3(0, 0, 0), 0.3f);
         mainMenuCanvas.transform.GetChild(2).transform.DOScale(new Vector3(0, 0, 0), 0.3f);
 
-        itemsMenuCanvas.transform.GetChild(0).transform.DOScale(new Vector3(1, 1, 1), 0.5f);
+        itemsMenuCanvas.transform.GetChild(0).transform.DOScale(new Vector3(4, 4, 4), 0.5f);
         itemsMenuCanvas.transform.GetChild(1).transform.DOScale(new Vector3(1, 1, 1), 0.3f);
         itemsMenuCanvas.transform.GetChild(1).transform.DOMoveY(300, 0.3f);
     }
@@ -54,10 +53,8 @@ public class UIManager : MonoBehaviour
         itemsMenuCanvas.transform.GetChild(1).transform.DOScale(new Vector3(0, 0, 0), 0.3f);
         itemsMenuCanvas.transform.GetChild(1).transform.DOMoveY(180, 0.3f);
 
-        ARPositionCanvas.transform.GetChild(0).transform.DOScale(new Vector3(1, 1, 1), 0.3f);
-        ARPositionCanvas.transform.GetChild(1).transform.DOScale(new Vector3(1, 1, 1), 0.3f);
+        ARPositionCanvas.transform.GetChild(0).transform.DOScale(new Vector3(4, 4, 4), 0.3f);
+        ARPositionCanvas.transform.GetChild(1).transform.DOScale(new Vector3(4, 4, 4), 0.3f);
     }
-
-
 
 }
